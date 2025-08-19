@@ -1,11 +1,11 @@
 # 🎉 Event RSVP App  
 
 A simple **Next.js + Supabase** app where users can RSVP to events.  
-Deployed on **Vercel** 🚀  
+Deployed on **Vercel** 
 
 ---
 
-## 📦 Features  
+## Features  
 - View upcoming events  
 - Submit RSVP (Yes / No / Maybe)  
 - Data stored securely in Supabase  
@@ -13,7 +13,7 @@ Deployed on **Vercel** 🚀
 
 ---
 
-## ⚡️ Setup  
+## Setup  
 
 ### 1️⃣ Clone Repo  
 ```bash
@@ -28,7 +28,15 @@ npm install
 
 ### 3️⃣ Configure Supabase  
 1. Create a free [Supabase](https://supabase.com) project.  
-2. Create the following tables:  
+2. Create the following tables:
+
+#### `users` table  
+| Column     | Type        | Notes                           |  
+|------------|-------------|---------------------------------|  
+| id         | uuid        | Primary Key                     |  
+| name       | text        | User’s full name                |  
+| email      | text        | Unique identifier (login/contact) |  
+| created_at | timestamptz | Default `now()`                 |  
 
 #### `events` table  
 | Column     | Type       | Notes           |  
@@ -62,33 +70,42 @@ Your app will be live at 👉 [http://localhost:3000](http://localhost:3000)
 
 ---
 
-## 🚀 Deployment  
+## Deployment  
 1. Push your project to GitHub.  
 2. Go to [Vercel](https://vercel.com) → **New Project → Import Repo**.  
 3. Add environment variables from `.env.local`.  
-4. Deploy ✅  
+4. Deploy ✅ 
 
 ---
 
-## 📂 Project Structure  
-```
-event-rsvp-app/
-├── src/app/
-│   ├── page.js       # Homepage
-│   ├── rsvp/page.js  # RSVP Form
-│   └── layout.js     # Root Layout
-├── public/           # Static assets
-├── styles/           # Tailwind styles
-├── .env.local        # Supabase keys (not committed)
-├── README.md         # Project docs
-```
+# Database Documentation
+
+This folder contains all database-related deliverables for the Event RSVP App.
+
+## Files
+- **SUPABASE_SETUP.docx** → Documentation of schema, design choices, and setup guide.  
+- **ER_diagram.png** → Visual ER diagram for quick reference.  
+- **schema.sql** → SQL dump to create the required tables.  
+- **sample_data.sql** → Sample insert queries (optional, for testing).  
+
+## Usage
+1. Run `schema.sql` in your Supabase SQL editor to create the tables.  
+2. (Optional) Run `sample_data.sql` to populate tables with demo records.  
+3. Refer to **SUPABASE_SETUP.docx** for screenshots, explanations, and design rationale.  
 
 ---
 
-## 📸 Screenshots  
-(Add screenshots of the homepage & RSVP form here 📷)  
+## Screenshots  
+### Homepage
+![Homepage](./homepage.png)
+
+### Events Page
+![Events](./events.png)
+
+### RSVP Form
+![RSVP](./rsvp.png) 
 
 ---
 
-## 👨‍💻 Author  
-Built by **Your Name** 🚀  
+## Author  
+Built by **Deep** 
