@@ -80,18 +80,23 @@ Your app will be live at 👉 [http://localhost:3000](http://localhost:3000)
 
 # Database Documentation
 
-This folder contains all database-related deliverables for the Event RSVP App.
+`SQL deliverables` folder contains all database-related deliverables for the Event RSVP App.
 
 ## Files
-- **SUPABASE_SETUP.docx** → Documentation of schema, design choices, and setup guide.  
+- **Documentation.pdf** → Documentation of schema, design choices, and setup guide.  
 - **ER_diagram.png** → Visual ER diagram for quick reference.  
-- **schema.sql** → SQL dump to create the required tables.  
-- **sample_data.sql** → Sample insert queries (optional, for testing).  
+- **events_table.png** → Screenshot of `events` table.  
+- **rsvp_table.png** → Screenshot of `rsvp` table.  
+- **users_table.png** → Screenshot of `users` table.  
+- **table_creation_schema.sql** → SQL dump to create all tables (`events`, `rsvp`, `users`).  
+- **users_creation_schema.sql** → SQL statements specifically for creating `users` table.  
+- **verifying_schema.sql** → Optional SQL queries for verifying table structure and data.  
 
 ## Usage
-1. Run `schema.sql` in your Supabase SQL editor to create the tables.  
-2. (Optional) Run `sample_data.sql` to populate tables with demo records.  
-3. Refer to **SUPABASE_SETUP.docx** for screenshots, explanations, and design rationale.  
+1. Run `table_creation_schema.sql` in your Supabase SQL editor to create the tables.  
+2. Run `users_creation_schema.sql` if you only want to create `users` table.  
+3. Run `verifying_schema.sql` to verify the table structure and sample data.  
+4. Refer to **Documentation.pdf** for screenshots, explanations, and design rationale.  
 
 ---
 
