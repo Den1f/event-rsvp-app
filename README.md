@@ -74,7 +74,9 @@ Your app will be live at 👉 [http://localhost:3000](http://localhost:3000)
 1. Push your project to GitHub.  
 2. Go to [Vercel](https://vercel.com) → **New Project → Import Repo**.  
 3. Add environment variables from `.env.local`.  
-4. Deploy ✅ 
+4. Deploy ✅
+
+You can check the website - [here](https://event-rsvp-app-eight.vercel.app/)
 
 ---
 
